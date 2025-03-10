@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import DashboardLayout from '../../../components/layouts/DashboardLayout';
 import IncomeOverview from '../../../components/Income/IncomeOverview';
-import axiosInstance from '../../../utils/axiosInstance';
-import { API_PATHS } from '../../../utils/apipath';
+import axiosInstance from '../../utils/axiosInstance'; // Corrected import path
+import { API_PATHS } from '../../utils/apipath';
 import Modal from '../../../components/Modal';
 import AddIncomeForm from '../../../components/Income/AddIncomeForm';
 import toast from 'react-hot-toast';
@@ -90,7 +90,6 @@ const Income = () => {
       const response = await axiosInstance.get(API_PATHS.INCOME.DOWNLOAD_INCOME, {
         responseType: 'blob'
       });
-
 
       if (response.status === 200) {
         const url = window.URL.createObjectURL(new Blob([response.data]));
