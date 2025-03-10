@@ -1,5 +1,4 @@
 export const BASE_URL ="https://expanse-tracker-backend-8922.onrender.com";
-;
 
 export const API_PATHS={
     AUTH:{
