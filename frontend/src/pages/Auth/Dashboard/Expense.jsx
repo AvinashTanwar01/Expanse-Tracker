@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import DashboardLayout from '../../../components/layouts/DashboardLayout';
 import useUserAuth from '../../../hooks/useUserAuth';
-import { API_PATHS } from '../../utils/apipath'; // Corrected import path
+import { API_PATHS } from '../../../utils/apipath'; // Corrected import path
 import toast from 'react-hot-toast';
-import axiosInstance from '../../utils/axiosInstance'; // Corrected import path
+import axiosInstance from '../../../utils/axiosInstance'; // Corrected import path
 import ExpenseOverview from '../../../components/Expense/ExpenseOverview';
 import Modal from '../../../components/Modal';
 import AddExpenseForm from '../../../components/Expense/AddExpenseForm';
