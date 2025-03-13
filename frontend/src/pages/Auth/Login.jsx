@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Input from '../../components/inputs/Input';
 import { validateEmail } from '../../utils/helper';
 import { API_PATHS } from '../../utils/apipath';
-import axiosInstance from '../../utils/axiosinstance'; 
+import axiosInstance from '../../utils/axiosInstance'; 
 import { UserContext } from '../../context/UserContext';
 
 const Login = () => {
