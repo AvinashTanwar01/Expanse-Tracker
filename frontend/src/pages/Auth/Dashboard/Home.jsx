@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import DashboardLayout from '../../../components/layouts/DashboardLayout';
 import useUserAuth from '../../../hooks/useUserAuth';
 import { useNavigate } from 'react-router-dom';
-import axiosInstance from "../../../utils/axiosInstance";
+import axiosInstance from "../../../utils/axiosinstance";
 
 import { API_PATHS } from '../../../utils/apipath';
 import { UserContext } from '../../../context/UserContext';
