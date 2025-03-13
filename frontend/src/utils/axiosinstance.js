@@ -1,7 +1,7 @@
 import axios from "axios";
 import { BASE_URL } from "./apipath";
 
-const axiosinstance = axios.create({
+const axiosInstance = axios.create({
     baseURL: BASE_URL,
     timeout: 10000,
     headers: {
@@ -41,4 +41,4 @@ axiosInstance.interceptors.response.use(
 }
 );
 
-export default axiosinstance;
+export default axiosInstance;
